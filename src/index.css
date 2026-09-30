@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* APP */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #101827;
+  color: white;
+  padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 10px 40px;
+}
+
+.logo span {
+  color: #6366f1;
+}
+
+.nav {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #aeb8ca;
+  text-align: left;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.nav:hover,
+.nav.active {
+  background: #27324a;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 12px;
+  color: #8d99ad;
+}
+
+.sidebar-bottom b {
+  color: white;
+}
+
+.sidebar-bottom p {
+  margin-top: 5px;
+}
+
+/* MAIN */
+
+.main {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+}
+
+/* HEADER */
+
+.header {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 20px;
+}
+
+.header p {
+  color: #8b95a7;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6366f1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 35px;
+  max-width: 1400px;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(120deg, #111827, #303d66);
+  color: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.hero small,
+.page-title small,
+.card small {
+  color: #6366f1;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+}
+
+.hero small {
+  color: #a5b4fc;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+/* BUTTONS */
+
+.primary {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.primary:hover {
+  background: #4f46e5;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.stat {
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 15px;
+  padding: 22px;
+}
+
+.stat span {
+  display: block;
+  color: #8993a5;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.stat strong {
+  font-size: 28px;
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.card h2 {
+  margin: 8px 0 20px;
+  font-size: 19px;
+}
+
+.card p {
+  color: #8993a5;
+  font-size: 13px;
+}
+
+/* PROGRESS */
+
+.progress-bar {
+  height: 12px;
+  background: #edf0f5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 20px;
+}
+
+/* RECENT */
+
+.recent {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.recent b {
+  font-size: 11px;
+  background: #eef2ff;
+  color: #6366f1;
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
+/* PAGE TITLE */
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 25px;
+}
+
+.page-title h1 {
+  font-size: 32px;
+  margin: 7px 0;
+}
+
+.page-title p {
+  color: #8993a5;
+}
+
+/* PROBLEMS */
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problem-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.problem-info {
+  flex: 1;
+}
+
+.problem-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.problem-info p {
+  color: #8993a5;
+  font-size: 13px;
+}
+
+.check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #d5dbe5;
+  background: white;
+}
+
+.check.solved {
+  background: #22c55e;
+  color: white;
+  border-color: #22c55e;
+}
+
+.level {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.level.easy {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.level.medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.level.hard {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.done {
+  color: #16a34a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pending {
+  color: #ea580c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* PROGRESS PAGE */
+
+.progress-card {
+  background: linear-gradient(135deg, #111827, #303d66);
+  color: white;
+  border-radius: 18px;
+  padding: 50px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: #6366f1;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 12px #303b61;
+}
+
+.circle strong {
+  font-size: 35px;
+}
+
+/* SETTINGS */
+
+.settings {
+  max-width: 600px;
+}
+
+.settings h1 {
+  margin: 10px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
